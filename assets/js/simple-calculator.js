@@ -3,7 +3,20 @@
     setTimeout( () => {
     const a = Number(prompt('Enter first argument!'));
     const b = Number(prompt('Enter second argument!'));
-    const action = prompt('Enter action as arithmetical operation');
+
+        /**  while  */
+
+    let action;
+    do {
+      const  action = prompt('Enter action as arithmetical operation');
+    }
+    while (
+        !(
+            '+' === action
+            || '-' === action
+            || '/' === action
+         )
+     );
 
     /**  ternaty operator construction  */
 
@@ -32,7 +45,7 @@
     //     alert('Unavailable action');
     // }
 
-     /**  switch case construction */ 
+     /**  switch case construction */
 
     // switch (action) {
     //     case '+':
