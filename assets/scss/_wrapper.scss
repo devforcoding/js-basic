@@ -1,0 +1,20 @@
+.wrapper {
+
+  &--bg-gray {
+    background-color: gray;
+    height: 100vh;
+  }
+
+  &__inner {
+    display: flex;
+    justify-content: center;
+
+
+  }
+
+  &__logo {
+    width: 100%;
+    height: auto;
+    max-width: 400px;
+  }
+}
