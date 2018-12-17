@@ -15,6 +15,7 @@
             '+' === action
             || '-' === action
             || '/' === action
+            || 'power' === action
          )
      );
 
@@ -26,7 +27,9 @@
             ? alert(a + ' - ' + b + ' = ' + (a - b))
             : ('*' === action)
               ? alert(a + ' * ' + b + ' = ' + (a * b))
-              : alert('Unavailable action!')
+                :('power' === action)
+                ? alert(a + ' power ' + b + ' = ' + (a ** b))
+                    : alert('Unavailable action!')
     ;
 
     /**  if else construction */
