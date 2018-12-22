@@ -33,10 +33,10 @@ var pet = {
     eat: function (food) {
         this.isHungry = false;
         this.isFull = true;
-        setTimeout(this.kek, 10000);
+        setTimeout(this.kek.bind(this), 10000, 'carpet');
     },
     kek: function (damagedPartOfApartments) {
         this.isFull = false;
-        this.saySomething(`Ooops! ${damagedPartOfApartments} if dirty`);
+        this.saySomething(`Ooops! ${damagedPartOfApartments} is dirty`);
     }
 };
